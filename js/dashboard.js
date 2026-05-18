@@ -1,35 +1,37 @@
 let postContainer = document.querySelector(".postContainer");
 
+
 let description = document.getElementById("description")
+
 let image = document.getElementById("file")
 
 let currentUser = {
-        fullName : "abdul wahid",
-        email:"abdulwahid12348@gmail.com",
-        password : "12345678"
-    }
+  fullName: "abdul wahid",
+  email: "abdulwahid12348@gmail.com",
+  password: "12345678"
+}
 
-function postHandler () {
+function postHandler() {
 
-    const file = image.files[0] 
+  const file = image.files[0]
 
-    if(file){
+  if (file) {
 
-      var imageUrl = URL.createObjectURL(file) 
-  
-      console.log(imageUrl);
-    }
+    var imageUrl = URL.createObjectURL(file)
 
-    console.log("mera post handler chlaa -->")
-    
+    console.log(imageUrl);
+  }
 
-    postContainer.innerHTML += `<!-- single post -->
+  console.log("mera post handler chlaa -->")
+
+
+  postContainer.innerHTML += `<!-- single post -->
     <div class="post mb-4">
     
       <!-- post header -->
       <div class="postHeader  d-flex justify-content-between align-items-center px-4">
         <div class="d-flex align-items-center gap-3 margin">
-          <img src="./images/image.png" alt=""
+          <img src="https://avatars.githubusercontent.com/u/224948898?v=4" alt=""
             width="50" height="50" id="postLogo">
           <div class="d-flex flex-column align-items-center">
             <h5>Sufiyan Shahid</h5>
@@ -73,29 +75,49 @@ function postHandler () {
       <hr>
     
       <div class="postBtnLikeShareComment d-flex justify-content-around">
-        <button>Like</button>
-        <button>Comment</button>
-        <button>Share</button>
+        <button class="like"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+        <button><i class="fa-regular fa-comment"></i> Comment</button>
+        <button><i class="fa-solid fa-share"></i> Share</button>
       </div>
     
     </div>`
 
-    description.value = ""
-    image.value = ''
-}
+  description.value = ""
+  image.value = ''
 
+  let likeIcon = document.getElementsByClassName("like")
 
+  for (let i = 0; i < likeIcon.length; i++) {
 
-function logoutHandler (){
-console.log("mera logout handler chlaa -->");
+    likeIcon[i].addEventListener("click", function () {
 
-
-currentUser = null;
-
-console.log("mery dashboard mai current user -->",currentUser);
-
-if(!currentUser){
-  window.location.href = "../Pages/login.html"
-}
+      likeIcon[i].classList.add("text-primary");
+    });
+  }
 
 }
+
+function logoutHandler() {
+  console.log("mera logout handler chlaa -->");
+
+
+  currentUser = null;
+
+  console.log("mery dashboard mai current user -->", currentUser);
+
+  if (!currentUser) {
+    window.location.href = "../Pages/login.html"
+  }
+
+}
+
+// let likeIcon = document.getElementsByClassName("like")
+
+// console.log(likeIcon);
+
+
+// likeIcon.addEventListener("click", function () {
+//     likeIcon.classList.add("text-primary");
+//     console.log("may chalaa");
+    
+// });
