@@ -6,9 +6,9 @@ let description = document.getElementById("description")
 let image = document.getElementById("file")
 
 let currentUser = {
-  fullName: "abdul wahid",
-  email: "abdulwahid12348@gmail.com",
-  password: "12345678"
+  fullName: "Hassan Rizwan",
+  email: "hassan@gmail.com",
+  password: "5678"
 }
 
 function postHandler() {
@@ -21,8 +21,6 @@ function postHandler() {
 
     console.log(imageUrl);
   }
-
-  console.log("mera post handler chlaa -->")
 
 
   postContainer.innerHTML += `<!-- single post -->
@@ -110,14 +108,3 @@ function logoutHandler() {
   }
 
 }
-
-// let likeIcon = document.getElementsByClassName("like")
-
-// console.log(likeIcon);
-
-
-// likeIcon.addEventListener("click", function () {
-//     likeIcon.classList.add("text-primary");
-//     console.log("may chalaa");
-    
-// });
