@@ -87,10 +87,6 @@ const signupHandler = () => {
 
     userDataArr.push(userData);
 
-    console.log(userDataArr);
-
-    // localStorage.setItem("users", JSON.stringify(userDataArr));
-
     sweetAlert("success", "Signup Successfully", "Congratulations")
 
     firstName.value = "";
@@ -120,7 +116,6 @@ function toggleEye() {
 
         password.type = "text";
         eyeIcon.className = "fa-solid fa-eye-slash";
-        console.log("may chala");
 
         return;
     }

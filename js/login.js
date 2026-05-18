@@ -105,7 +105,6 @@ function toggleEye() {
 
         password.type = "text";
         eyeIcon.className = "fa-solid fa-eye-slash";
-        console.log("may chala");
         
         return;
     }

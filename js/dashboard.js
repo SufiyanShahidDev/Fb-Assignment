@@ -19,7 +19,6 @@ function postHandler() {
 
     var imageUrl = URL.createObjectURL(file)
 
-    console.log(imageUrl);
   }
 
 
@@ -96,12 +95,7 @@ function postHandler() {
 }
 
 function logoutHandler() {
-  console.log("mera logout handler chlaa -->");
-
-
   currentUser = null;
-
-  console.log("mery dashboard mai current user -->", currentUser);
 
   if (!currentUser) {
     window.location.href = "../Pages/login.html"

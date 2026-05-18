@@ -62,9 +62,6 @@ nav {
 .nav-two>.icons i:hover,
 .nav-three>.icons i:hover {
     background-color: #E6E8EA;
-    /* transition: all 0.5; */
-    /* padding: 10px; */
-
     border-radius: 50%;
 }
 
@@ -192,7 +189,6 @@ nav {
 .stories-cards {
     height: 100%;
     width: 120px;
-    /* background-color: black; */
     border-radius: 15px;
     position: relative;
 
@@ -202,7 +198,6 @@ nav {
     height: 70%;
     width: 99%;
     border-radius: 15px;
-    /* object-fit: fill; */
 }
 
 .round-box {
