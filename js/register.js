@@ -113,4 +113,24 @@ const signupHandler = () => {
 
 };
 
+// Toggle Eye
+function toggleEye() {
+
+    if (password.type == "password") {
+
+        password.type = "text";
+        eyeIcon.className = "fa-solid fa-eye-slash";
+        console.log("may chala");
+
+        return;
+    }
+
+    if (password.type == "text") {
+
+        password.type = "password";
+        eyeIcon.className = "fa-solid fa-eye";
+        return;
+    }
+}
+
 signUpBtn.addEventListener("click", signupHandler);
