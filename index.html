@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/dashboard.css">
+</head>
+
+<body>
+    <!-- Navbar  -->
+    <nav class="d-flex justify-content-between align-items-center">
+        <div class="nav-one d-flex justify-content-between align-items-center gap-2">
+            <img src="Images/f-logo.svg" alt="Facebook Logo" height="50px" width="50px">
+            <div class="icon-parent">
+                <i class="fa-solid fa-magnifying-glass "></i>
+                <input type="text" placeholder="Search Anything...">
+            </div>
+        </div>
+
+        <div class="nav-two ">
+            <div class="icons">
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-user-group"></i>
+                <i class="fa-solid fa-users"></i>
+
+
+            </div>
+        </div>
+        <div class="nav-three">
+            <div class="icons ">
+                <button type="button" class="btn btn-light btn-border">Find Friends</button>
+                <i class="fa-solid fa-grip"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <i class="fa-solid fa-bell"></i>
+
+                <div class="dropdown ">
+                    <button class="btn btnForDropdown dropdown-toggle d-flex align-items-center " type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+
+                        <i class="fa-solid fa-user-astronaut userIcon"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="Javascript:void(0)" onclick="logoutHandler()">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main -->
+
+    <div class="container-fluid text-center mt-3">
+        <div class="row">
+            <!-- left sidebar -->
+            <div class="col col-lg-3  leftSidebar">
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://avatars.githubusercontent.com/u/224948898?v=4" alt="" height="50px" width="50px">
+                    <p>Sufiyan Shahid Dev</p>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2026/03/29/69d65519bc338_com.facebook.stella.png" alt="" height="50px" width="50px">
+                    <p>Meta AI</p>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR91zLrxeVetcQjZJnCgJc3VeUOyvUGNOJYxA&s" alt="" height="50px" width="50px">
+                    <p>Friends</p>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/11820/11820135.png" alt="" height="50px" width="50px">
+                    <p>Memories</p>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo4APa7AR_Kp66o03ANueqh9fl8JlhxX_b3w&s" alt="" height="50px" width="50px">
+                    <p>Saved</p>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/11820/11820089.png" alt="" height="50px" width="50px">
+                    <p>Groups</p>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://cdn-icons-png.flaticon.com/256/11820/11820224.png" alt="" height="50px" width="50px">
+                    <p>Reels</p>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2274/2274361.png" alt="" height="50px" width="50px">
+                    <p>Feeds</p>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://images.freeimages.com/image/thumbs/eca/flat-star-icon-png-style-5707936.png" alt="" height="50px" width="50px">
+                    <p>Events</p>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZdO935i7RKu-e-BQQDKzauNLz28emm4eaHw&s" alt="" height="50px" width="50px">
+                    <p>Ads Manager</p>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSavS21MpD3qj3IIDijdmN1MeWgOGrYOOsMvg&s" alt="" height="50px" width="50px">
+                    <p>Play games</p>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-facebook-messenger-icon-svg-download-png-3357700.png" alt="" height="50px" width="50px">
+                    <p>Messenger</p>
+                </div>
+            </div>
+            <!-- feed -->
+            <div class="col col-lg-6  feed">
+
+                <!-- top header -->
+                <div class="topHeader d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-2 img-modal">
+                        <img src="https://avatars.githubusercontent.com/u/224948898?v=4" alt="" height="50px"
+                            width="50px">
+                        <div>
+                            <button type="button" class="text-start btn btn-light btn-border" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                What's on your Mind ?
+                            </button>
+                        </div>
+                    </div>
+                    <div class="emoji d-flex ">
+                        <i class="fa-solid fa-video text-danger"></i>
+                        <i class="fa-solid fa-photo-film text-success"></i>
+                        <i class="fa-solid fa-face-smile text-warning"></i>
+                    </div>
+
+                </div>
+
+                <!-- stories -->
+                <div class="stories-section d-flex gap-2">
+                    <div class="stories-cards">
+                        <img src="https://avatars.githubusercontent.com/u/224948898?v=4"
+                            height="100px" width="50px">
+                        <div class="round-box bg-primary">
+                            <i class="fa-solid fa-plus fs-5 text-white "></i>
+                        </div>
+                        <p class="mt-3"><b>Create Story</b></p>
+                    </div>
+                    <div class="stories-cards"></div>
+                    <div class="stories-cards"></div>
+
+                </div>
+
+
+                <!-- postContainer -->
+
+                <div class="postContainer">
+
+
+                </div>
+
+
+            </div>
+
+            <!-- Modal  -->
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class=" modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a Post</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="descriptionArea">
+
+                                <input type="text" placeholder="Enter your description" id="description">
+                            </div>
+                            <div class="file">
+                                <input type="file" id="file">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" onclick="postHandler()">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- chats -->
+            <div class="col col-lg-3 chats">
+
+                <div class="mb-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>Contact</p>
+                        <div class="icons">
+                            <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://avatars.githubusercontent.com/u/140997677?v=4" alt="" height="50px" width="50px">
+                    <p>Muhammad Hasan</p>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="https://avatars.githubusercontent.com/u/224722350?v=4" alt="" height="50px" width="50px">
+                    <p>Arham Maqsood</p>
+                </div>
+
+                <hr>
+
+                <p class="">Group chats</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="Js/dashboard.js"></script>
+</body>
+
+</html>
